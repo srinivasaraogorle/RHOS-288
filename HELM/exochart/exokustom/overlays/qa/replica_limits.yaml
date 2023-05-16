@@ -1,0 +1,14 @@
+apiVersion: app/v
+kind: Deployment
+metadata:
+  name: exoplanet-chart
+spec:
+  replica: 2
+  template:
+    spec:
+      containers:
+        - name: exichart
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "250m"
